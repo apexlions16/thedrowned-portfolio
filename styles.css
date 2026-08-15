@@ -3,6 +3,7 @@
 /* Fresh image/icon fixes */
 .vs-icon{font-size:0!important;color:transparent!important;background:#0b2437 url("assets/vscode.svg?v=2") center/40px 40px no-repeat!important;border-radius:10px!important;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
 .wallpaper-logo img{width:min(25vw,265px)!important;max-height:52vh!important;height:auto!important;object-fit:contain!important;opacity:1!important;filter:brightness(0) invert(1) drop-shadow(0 16px 32px rgba(0,0,0,.48))!important}
+.m-logo img{filter:brightness(0) invert(1)!important}
 .trash-item img{width:64px!important;height:58px!important;padding:3px!important;border-radius:9px!important;background:#fff!important;object-fit:contain!important;display:block!important}
 .task-app{display:flex!important;align-items:center!important;gap:8px!important}.task-vs-icon{width:18px;height:18px;background:url("assets/vscode.svg?v=2") center/contain no-repeat;display:inline-block}
 .win-icon{width:15px;height:15px;display:inline-block;background:linear-gradient(90deg,#dbe8f5 0 45%,transparent 45% 55%,#dbe8f5 55%),linear-gradient(#dbe8f5 0 45%,transparent 45% 55%,#dbe8f5 55%);border-radius:1px}.search-icon{width:13px;height:13px;border:1.7px solid #dbe8f5;border-radius:50%;display:inline-block;position:relative}.search-icon:after{content:"";position:absolute;width:6px;height:1.7px;background:#dbe8f5;right:-5px;bottom:-3px;transform:rotate(45deg);border-radius:2px}

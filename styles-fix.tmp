@@ -1,0 +1,10 @@
+@import url("styles-base.css");
+/* desktop visual fixes */
+.vs-icon{font-size:0;background:#0b2437;border-radius:10px;overflow:hidden;position:relative}.vs-icon::before{content:"";width:42px;height:42px;background:url("assets/vscode.svg") center/contain no-repeat;display:block}
+.task-app{display:flex;align-items:center;gap:8px;font-size:0;padding:0 13px}.task-app::before{content:"";width:20px;height:20px;flex:0 0 20px;background:url("assets/vscode.svg") center/contain no-repeat}.task-app span{font:600 12px var(--mono)}
+.start-grid button[data-start="portfolio"]{font-size:0}.start-grid button[data-start="portfolio"]::before{content:"";width:30px;height:30px;background:url("assets/vscode.svg") center/contain no-repeat}.start-grid button[data-start="portfolio"] span{font:600 10px var(--ui)}
+.task-icon{font-size:0;position:relative}.task-icon::before{content:"";width:17px;height:17px;display:block;background:linear-gradient(#7bc8ff 0 0) 0 0/7px 7px no-repeat,linear-gradient(#7bc8ff 0 0) 10px 0/7px 7px no-repeat,linear-gradient(#7bc8ff 0 0) 0 10px/7px 7px no-repeat,linear-gradient(#7bc8ff 0 0) 10px 10px/7px 7px no-repeat}
+.task-search{display:flex;align-items:center;gap:8px;font-size:0}.task-search::before{content:"";width:13px;height:13px;flex:0 0 13px;border:1.7px solid #d8e2eb;border-radius:50%;box-sizing:border-box;box-shadow:5px 5px 0 -4px #d8e2eb;transform:translateY(-1px)}.task-search span{font:600 12px var(--mono)}
+.trash-icon{background:url("assets/recycle-bin.svg") center/contain no-repeat}.trash-icon svg{display:none}
+.wallpaper-logo img{width:min(24vw,260px);height:auto;max-height:56vh;object-fit:contain}
+.trash-item img{object-fit:contain;padding:4px;background:#fff}

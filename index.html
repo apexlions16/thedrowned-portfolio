@@ -3,10 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#080a0d">
+  <meta name="theme-color" content="#101116">
+  <meta name="color-scheme" content="dark light">
   <meta name="description" content="Hasan — Web Designer, Reverse Engineer, C++ developer ve Odium Stüdyo Full Stack Developer.">
-  <title>thedrowned — Portfolio</title>
+  <meta property="og:title" content="thedrowned — Hasan | Developer Portfolio">
+  <meta property="og:description" content="Hasan — Web Design, Reverse Engineering, C++ ve Odium Stüdyo projeleri.">
+  <meta property="og:type" content="website">
+  <title>thedrowned — Hasan | Developer Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="refresh.css?v=1">
 </head>
 <body class="portfolio-open">
   <div id="desktop" class="desktop" aria-label="Masaüstü">
@@ -78,7 +83,7 @@
 
   <div id="vscode" class="vscode">
     <header class="titlebar">
-      <div class="traffic"><button class="dot red" data-action="desktop"></button><button class="dot yellow" data-action="desktop"></button><button class="dot green" id="fullscreenBtn"></button></div>
+      <div class="traffic"><button class="dot red" data-action="desktop" aria-label="Masaüstüne dön" title="Masaüstüne dön"></button><button class="dot yellow" data-action="desktop" aria-label="Pencereyi küçült" title="Masaüstüne dön"></button><button class="dot green" id="fullscreenBtn" aria-label="Tam ekranı değiştir" title="Tam ekran"></button></div>
       <div class="title">Hasan — Portfolio — Visual Studio Code</div>
       <div class="title-actions"><button id="commandBtn" title="Komut Paleti">⌕</button><button id="desktopBtn" class="desktop-btn">▣ <span>Masaüstünü Göster</span></button></div>
     </header>
@@ -128,21 +133,34 @@
               <div><span class="var">status</span>: <span class="str">"Working @ Odium Stüdyo"</span>,</div>
               <div><span class="fn">introduction</span>() {</div>
               <div class="hero-card">
-                <div class="eyebrow">WEB DESIGNER · REVERSE ENGINEER · C++</div>
-                <h1>Merhaba, ben <span id="typeName" class="type-name">Hasan</span>.</h1>
-                <p>Odium Stüdyo'da Full Stack Developer olarak çalışıyorum. Web tasarımı, reverse engineering ve düşük seviye yazılım analizi üzerine yoğunlaşıyorum.</p>
-                <div class="hero-actions"><button class="primary" data-go="projects">Projelerimi Gör →</button><button data-go="experience">Deneyimim</button><button id="heroCommand">⌘ Komut Paleti</button></div>
+                <div class="hero-topline"><span class="hero-live"><i aria-hidden="true"></i> ODİUM WORKSPACE <span class="hero-live-divider">/</span> PORTFOLIO</span><span class="hero-edition">EST. 2026 <span aria-hidden="true">↗</span></span></div>
+                <div class="hero-main">
+                  <div class="hero-copy">
+                    <div class="eyebrow">WEB DESIGNER <span>·</span> REVERSE ENGINEER <span>·</span> C++</div>
+                    <h1>Merhaba, ben <span id="typeName" class="type-name">Hasan</span><span class="hero-period">.</span></h1>
+                    <p>Odium Stüdyo'da Full Stack Developer olarak çalışıyorum. Web tasarımı, reverse engineering ve düşük seviye yazılım analizi üzerine yoğunlaşıyorum.</p>
+                    <div class="hero-actions"><button class="primary" data-go="projects">Projelerimi Gör <span aria-hidden="true">↗</span></button><button data-go="experience">Deneyimim</button><button id="heroCommand" title="Ctrl + K / ⌘ K">⌘ Komut Paleti</button></div>
+                    <a class="hero-github" href="https://github.com/apexlions16" target="_blank" rel="noopener noreferrer">github.com/apexlions16 <span aria-hidden="true">↗</span></a>
+                  </div>
+                  <div class="hero-visual" aria-hidden="true">
+                    <div class="hero-visual-header"><span>PROFILE / README.md</span><span>● ● ●</span></div>
+                    <div class="hero-monogram">H<span>.</span></div>
+                    <div class="hero-visual-grid"><span>01 // WEB DESIGN</span><span>02 // REVERSE ENGINEERING</span><span>03 // C++ / NATIVE</span></div>
+                    <div class="hero-visual-footer"><span class="visual-pulse"></span> SYSTEM ONLINE</div>
+                  </div>
+                </div>
+                <div class="hero-bottom"><span>CRAFTING DIGITAL EXPERIENCES</span><span>SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span></div>
               </div>
               <div>},</div>
             </div><div>};</div>
           </section>
 
           <section id="about" data-file="about.tsx" class="ide-section">
-            <div class="comment">// data/about_me.json</div><div>{</div><div class="indent"><div><span class="var">"focus"</span>: <span class="str">"Web design, reverse engineering, native software"</span>,</div><div class="about-grid"><article><h3>Web Design</h3><p>Temiz, hızlı ve kullanılabilir arayüzler tasarlıyorum.</p></article><article><h3>Reverse Engineering</h3><p>Binary davranışını ve kod akışını analiz etmeyi seviyorum.</p></article><article><h3>C++ / Native</h3><p>Düşük seviye geliştirme ve native uygulamalar ana teknik ilgi alanım.</p></article><article><h3>Iteration</h3><p>Fikri hızlıca prototipe çevirip test ederek geliştirmeyi tercih ederim.</p></article></div></div><div>}</div>
+            <div class="comment">// data/about_me.json</div><div class="section-heading"><span>01 / ABOUT ME</span><h2>Merakla başlayan işler.</h2><p>Tasarımın estetiğini sistemlerin mantığıyla birleştiriyorum.</p></div><div>{</div><div class="indent"><div><span class="var">"focus"</span>: <span class="str">"Web design, reverse engineering, native software"</span>,</div><div class="about-grid"><article><h3>Web Design</h3><p>Temiz, hızlı ve kullanılabilir arayüzler tasarlıyorum.</p></article><article><h3>Reverse Engineering</h3><p>Binary davranışını ve kod akışını analiz etmeyi seviyorum.</p></article><article><h3>C++ / Native</h3><p>Düşük seviye geliştirme ve native uygulamalar ana teknik ilgi alanım.</p></article><article><h3>Iteration</h3><p>Fikri hızlıca prototipe çevirip test ederek geliştirmeyi tercih ederim.</p></article></div></div><div>}</div>
           </section>
 
           <section id="skills" data-file="skills.json" class="ide-section">
-            <div class="comment">// reverse_engineering_skills.json</div><div><span class="var">"dependencies"</span>: {</div>
+            <div class="comment">// reverse_engineering_skills.json</div><div class="section-heading"><span>02 / MY TOOLKIT</span><h2>Kullandığım yetenekler.</h2><p>Arayüzden düşük seviyeye, üretim sürecinin farklı katmanları.</p></div><div><span class="var">"dependencies"</span>: {</div>
             <div class="indent skill-list">
               <div><span><span class="var">"Reverse_Engineering"</span>: <span class="str">"Static / Dynamic Analysis"</span>,</span><b>01</b></div>
               <div><span><span class="var">"Binary_Analysis"</span>: <span class="str">"Native Executables / Code Flow"</span>,</span><b>02</b></div>
@@ -155,18 +173,20 @@
 
           <section id="projects" data-file="projects.tsx" class="ide-section">
             <div class="comment">// src/projects.tsx — Odium Stüdyo</div>
+            <div class="section-heading"><span>03 / SELECTED WORK</span><h2>Üzerinde çalıştığım projeler.</h2><p>Odium Stüdyo çatısı altında geliştirdiğimiz yerelleştirme ve dublaj çalışmaları.</p></div>
+            <div class="project-toolbar"><span>07 PROJECTS FOUND</span><div class="project-filters" role="group" aria-label="Projeleri filtrele"><button class="active" data-project-filter="all" aria-pressed="true">Tümü</button><button data-project-filter="completed" aria-pressed="false">Tamamlanan</button><button data-project-filter="ongoing" aria-pressed="false">Devam Eden</button></div></div>
             <div class="project-grid">
-              <article class="project"><div><small>RESMİ ÇALIŞMA</small><h3>MiSide Türkçe Dublaj</h3><p>MiSide için Odium Stüdyo tarafından hazırlanan Türkçe dublaj çalışması.</p></div><footer><span>Tamamlandı</span><a href="https://www.odiumtr.com/" target="_blank" rel="noreferrer">↗</a></footer></article>
-              <article class="project"><div><small>FAN YAPIMI</small><h3>FNAF: Security Breach</h3><p>Security Breach için yürütülen Türkçe dublaj projesi.</p></div><footer><span>Devam Ediyor</span><a href="https://www.odiumtr.com/" target="_blank" rel="noreferrer">↗</a></footer></article>
-              <article class="project"><div><small>FAN YAPIMI</small><h3>Poppy Playtime — Bölüm 1</h3><p>Poppy Playtime Bölüm 1 için hazırlanan Türkçe dublaj projesi.</p></div><footer><span>Tamamlandı</span><a href="https://www.odiumtr.com/" target="_blank" rel="noreferrer">↗</a></footer></article>
-              <article class="project"><div><small>FAN YAPIMI</small><h3>Outlast Türkçe Dublaj</h3><p>Outlast için hazırlanan Türkçe dublaj projesi.</p></div><footer><span>Tamamlandı</span><a href="https://www.odiumtr.com/" target="_blank" rel="noreferrer">↗</a></footer></article>
-              <article class="project"><div><small>FAN YAPIMI</small><h3>Outlast: Whistleblower</h3><p>Whistleblower genişlemesi için hazırlanan Türkçe dublaj projesi.</p></div><footer><span>Tamamlandı</span><a href="https://www.odiumtr.com/" target="_blank" rel="noreferrer">↗</a></footer></article>
-              <article class="project"><div><small>FAN YAPIMI</small><h3>Bendy ve Mürekkep Makinesi</h3><p>Bendy and the Ink Machine için hazırlanan Türkçe dublaj projesi.</p></div><footer><span>Tamamlandı</span><a href="https://www.odiumtr.com/" target="_blank" rel="noreferrer">↗</a></footer></article>
-              <article class="project"><div><small>FAN YAPIMI</small><h3>Welcome to the Game III</h3><p>Welcome to the Game III için hazırlanan Türkçe dublaj projesi.</p></div><footer><span>Tamamlandı</span><a href="https://www.odiumtr.com/" target="_blank" rel="noreferrer">↗</a></footer></article>
+              <article class="project" data-status="completed"><div><small>RESMİ ÇALIŞMA</small><h3>MiSide Türkçe Dublaj</h3><p>MiSide için Odium Stüdyo tarafından hazırlanan Türkçe dublaj çalışması.</p></div><footer><span>Tamamlandı</span><a href="https://www.odiumtr.com/" target="_blank" rel="noopener noreferrer" aria-label="Odium Stüdyo proje sayfasını aç">Detaylar ↗</a></footer></article>
+              <article class="project" data-status="ongoing"><div><small>FAN YAPIMI</small><h3>FNAF: Security Breach</h3><p>Security Breach için yürütülen Türkçe dublaj projesi.</p></div><footer><span>Devam Ediyor</span><a href="https://www.odiumtr.com/" target="_blank" rel="noopener noreferrer" aria-label="Odium Stüdyo proje sayfasını aç">Detaylar ↗</a></footer></article>
+              <article class="project" data-status="completed"><div><small>FAN YAPIMI</small><h3>Poppy Playtime — Bölüm 1</h3><p>Poppy Playtime Bölüm 1 için hazırlanan Türkçe dublaj projesi.</p></div><footer><span>Tamamlandı</span><a href="https://www.odiumtr.com/" target="_blank" rel="noopener noreferrer" aria-label="Odium Stüdyo proje sayfasını aç">Detaylar ↗</a></footer></article>
+              <article class="project" data-status="completed"><div><small>FAN YAPIMI</small><h3>Outlast Türkçe Dublaj</h3><p>Outlast için hazırlanan Türkçe dublaj projesi.</p></div><footer><span>Tamamlandı</span><a href="https://www.odiumtr.com/" target="_blank" rel="noopener noreferrer" aria-label="Odium Stüdyo proje sayfasını aç">Detaylar ↗</a></footer></article>
+              <article class="project" data-status="completed"><div><small>FAN YAPIMI</small><h3>Outlast: Whistleblower</h3><p>Whistleblower genişlemesi için hazırlanan Türkçe dublaj projesi.</p></div><footer><span>Tamamlandı</span><a href="https://www.odiumtr.com/" target="_blank" rel="noopener noreferrer" aria-label="Odium Stüdyo proje sayfasını aç">Detaylar ↗</a></footer></article>
+              <article class="project" data-status="completed"><div><small>FAN YAPIMI</small><h3>Bendy ve Mürekkep Makinesi</h3><p>Bendy and the Ink Machine için hazırlanan Türkçe dublaj projesi.</p></div><footer><span>Tamamlandı</span><a href="https://www.odiumtr.com/" target="_blank" rel="noopener noreferrer" aria-label="Odium Stüdyo proje sayfasını aç">Detaylar ↗</a></footer></article>
+              <article class="project" data-status="completed"><div><small>FAN YAPIMI</small><h3>Welcome to the Game III</h3><p>Welcome to the Game III için hazırlanan Türkçe dublaj projesi.</p></div><footer><span>Tamamlandı</span><a href="https://www.odiumtr.com/" target="_blank" rel="noopener noreferrer" aria-label="Odium Stüdyo proje sayfasını aç">Detaylar ↗</a></footer></article>
             </div>
           </section>
 
-          <section id="experience" data-file="git-history.log" class="ide-section"><div class="comment">$ git log --oneline --decorate</div><div class="timeline"><article><span class="branch">HEAD → main</span><h3>Full Stack Developer @ Odium Stüdyo</h3><small>Present</small><p>Odium Stüdyo bünyesinde Full Stack Developer olarak çalışıyorum. Özellikle web tasarımı, arayüz geliştirme ve web projelerinin uygulanması tarafına yoğunlaşıyorum.</p></article></div></section>
+          <section id="experience" data-file="git-history.log" class="ide-section"><div class="comment">$ git log --oneline --decorate</div><div class="section-heading"><span>04 / EXPERIENCE</span><h2>Yolculuğum.</h2><p>Geliştirmeye, denemeye ve yeni şeyler üretmeye devam ediyorum.</p></div><div class="timeline"><article><span class="branch">HEAD → main</span><h3>Full Stack Developer @ Odium Stüdyo</h3><small>Present</small><p>Odium Stüdyo bünyesinde Full Stack Developer olarak çalışıyorum. Özellikle web tasarımı, arayüz geliştirme ve web projelerinin uygulanması tarafına yoğunlaşıyorum.</p></article></div></section>
         </main>
 
         <section id="terminal" class="terminal"><div class="terminal-head"><b>TERMINAL</b><button id="terminalClose">×</button></div><div id="termOut" class="term-out">Hasan Portfolio Terminal — help yazabilirsin.</div><div class="term-input"><span>➜ ~</span><input id="termInput" autocomplete="off"></div></section>
@@ -177,7 +197,7 @@
   </div>
 
   <div id="palette" class="palette"><div class="palette-box"><input id="paletteInput" placeholder="> Komut yaz veya dosya ara…" autocomplete="off"><div id="paletteList"></div></div></div>
-  <div id="toast" class="toast"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <div id="mobile" class="mobile">
     <header class="m-status"><span id="mobileTime">00:00</span><div>ODIUM <i></i></div></header>
